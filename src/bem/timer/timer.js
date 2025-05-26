@@ -1,8 +1,8 @@
 export default class Timer {
-	constructor(minutes, seconds) {
+	constructor() {
 		this.timer_section_element = document.querySelector('.timer_context')
-		this.minutes = minutes
-		this.seconds = seconds
+		this.minutes = parseInt(this.timer_section_element.dataset.minutes) || 0
+		this.seconds = parseInt(this.timer_section_element.dataset.seconds) || 0
 		this.render()
 		this.startTimer()
 	}
@@ -38,7 +38,7 @@ export default class Timer {
 	}
 }
 
-new Timer(30, 0)
+new Timer()
 
 const timer__button = document.querySelector('.timer__button')
 if (timer__button) {
