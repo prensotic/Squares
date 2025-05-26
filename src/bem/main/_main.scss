@@ -4,8 +4,7 @@
   width: 100%;
   padding: 30px;
   height: 100%;
-  display: flex;
-  align-items: center;
+  @include centralize_block_by_flex();
   
   &__container{
     max-width: 1200px;
@@ -31,15 +30,11 @@
   }
 
   .main__container{
-    display: flex;
-    justify-content: center;
-    height: 100%;
+    @include centralize_block_by_flex();
   }
 
   .main{
-    width: 100vw;
     padding: 10px;
-    min-height: auto;
   }
 }
 

@@ -1,0 +1,14 @@
+@mixin centralize_block_by_flex(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin text_limit($line){
+  display: -webkit-box;      
+  -webkit-line-clamp: $line;       
+  -webkit-box-orient: vertical;  
+  overflow: hidden;             
+  text-overflow: ellipsis; 
+}
+

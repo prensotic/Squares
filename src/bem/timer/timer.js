@@ -1,6 +1,6 @@
 export default class Timer {
 	constructor() {
-		this.timer_section_element = document.querySelector('.timer_context')
+		this.timer_section_element = document.querySelector('.timer__context')
 		this.minutes = parseInt(this.timer_section_element.dataset.minutes) || 0
 		this.seconds = parseInt(this.timer_section_element.dataset.seconds) || 0
 		this.render()

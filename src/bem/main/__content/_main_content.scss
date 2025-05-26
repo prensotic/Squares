@@ -2,27 +2,31 @@
   width: 486px;
   height: 347;
   font-family: "Lato-Regular", sans-serif;
-  color: #35373B;
-  overflow: nowrap;
+  color: var(--grey-dark);
   display: flex;
   flex-direction: column;
   gap: 20px;
   
+  
   .main__title{
     font-size: 90px;
+    @include text_limit(1);
   }
   
   .main__sub-title{
     font-size: 32px;
+    @include text_limit(1);
   }
   
   .main__message{
     font-size: 22px;
+    @include text_limit(2);
   }
   
   .main__description{
     font-size: 15px;
-    color: #828282;
+    @include text_limit(3);
+    color: var(--grey-light);
   }
   @media screen and (max-width: 600px){
     .main__title{

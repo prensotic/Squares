@@ -1,8 +1,10 @@
 .footer{
-  background-color: #ffffff;
+  background-color: var(--white);
   margin: auto 0;
   padding: 30px;
-  
+  border: 1px solid var(--grey-border);
+  height: 100%;
+
   &__container{
     max-width: 1200px;
     width: 100%;
@@ -13,7 +15,7 @@
   }
   
   &__context{
-    color: #72757D;
+    color: var(--grey-header-footer-text);
     font-family: "Lato-Regular", sans-serif;
     font-size: 15px;
   }
@@ -25,17 +27,20 @@
     background-color: #4073FF;
     height: 40px;
     width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centralize_block_by_flex();
     border-radius: 50%;
     cursor: pointer;
   }
 }
 
+@media screen and (max-width: 1200px){
+  .footer{
+    @include centralize_block_by_flex()
+  }
+}
+
 @media screen and (max-width: 600px){
   .footer{
-    width: 100vw;
     padding: 10px;
   }
 }

@@ -1,14 +1,6 @@
-@import '../bem/header/header', '../bem/main/main', '../bem/footer/footer', '../bem/button/button.scss', '../bem/timer/timer.scss';
+@import './fonts.scss', './mixins.scss', './root.scss', '../bem/header/header', '../bem/main/main', '../bem/footer/footer', '../bem/button/button.scss', '../bem/timer/timer.scss' ;
 
-@font-face {
-  font-family: "Lato-Regular";
-  src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
-}
 
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
-}
 
 
 *{
