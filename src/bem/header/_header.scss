@@ -1,0 +1,38 @@
+.header{
+  background-color: #ffffff;
+  margin: auto 0;
+  padding: 30px;
+
+  &__container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__title{
+    font-size: 15px;
+    font-family: "Lato-Regular", sans-serif;
+    color: #72757D;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 371px;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px){
+    &__title{
+      font-size: 12px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  .header__container{
+    flex-direction: column;
+    max-width: 100vw;
+  }
+}

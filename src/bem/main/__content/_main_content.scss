@@ -1,0 +1,50 @@
+.main__content{
+  width: 486px;
+  height: 347;
+  font-family: "Lato-Regular", sans-serif;
+  color: #35373B;
+  overflow: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  .main__title{
+    font-size: 90px;
+  }
+  
+  .main__sub-title{
+    font-size: 32px;
+  }
+  
+  .main__message{
+    font-size: 22px;
+  }
+  
+  .main__description{
+    font-size: 15px;
+    color: #828282;
+  }
+  @media screen and (max-width: 600px){
+    .main__title{
+      font-size: 60px;
+    }
+    
+    .main__sub-title{
+      font-size: 24px;
+    }
+    
+    .main__message{
+      font-size: 18px;
+    }
+    
+    .main__description{
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .main__content{
+    width: fit-content;
+  }
+}

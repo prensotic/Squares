@@ -1,0 +1,6 @@
+import logo from './assets/images/logo.svg'
+import main__image from './assets/images/main_section_image.jpg'
+import vk_logo from './assets/icons/vk-logo.png'
+import facebook_logo from './assets/icons/facebook-logo.png'
+import styles from './styles/style.scss'
+import'./bem/timer/timer'
